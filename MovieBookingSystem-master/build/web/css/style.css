@@ -1,0 +1,355 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 5, 2017, 2:16:02 AM
+    Author     : Sanjana
+*/
+
+@charset "UTF-8";
+
+/* ========		reset		============================================================== */
+
+* {margin:0;padding:0;}
+
+img, a {
+	border:none;
+	outline:none;
+}
+li {margin:0;padding:0;}
+body {
+	background: #000 url(../images/ticket.jpg) no-repeat top center;
+        background-size: auto 100%;
+        float: right;
+	font:smaller Arial, Helvetica, sans-serif;
+	line-height:1.3em;
+	color:#f6e8d2;
+}
+/* ========		layout		============================================================== */
+#wrapper {
+	width:960px;
+	margin:0 auto;
+	padding: 0 0 14px 0;
+	overflow:hidden;
+}
+#header {
+	float:left;
+	width:960px;
+}
+img.logo {
+	position:absolute;
+	top:5px;
+	z-index:99;
+}
+
+/* ========		navigation	============================================================== */
+#mainnav {
+	float:right;
+	list-style-type:none;
+	display:inline;
+	margin:68px 30px 0 0;
+	font-weight:lighter;
+	overflow:hidden;
+}
+#mainnav li {
+	display:inline;
+	padding:0 !important;
+	font-size:100%;
+}
+#mainnav li a {
+	float:left;
+	text-transform:uppercase;
+	color:#f6e8d2;
+	text-decoration:none;
+	padding:5px 12px 5px 12px !important;
+	margin: 0 0 0 2px;
+}
+#mainnav li a:hover {
+	background: transparent url(../images/nav-bg.png) repeat-x top left;
+	color:#d0934d;
+	}
+#mainnav li.current a:link {
+	background: transparent url(../images/nav-bg.png) repeat-x top left;
+	color:#d0934d;
+	}
+#mainnav li.current a:visited {
+	background: transparent url(../images/nav-bg.png) repeat-x top left;
+	color:#d0934d;
+	}
+
+* html #mainnav li a {
+	float:left;
+	background:#644322;
+	text-transform:uppercase;
+	color:#f6e8d2;
+	text-decoration:none;
+	padding:5px 12px 5px 12px !important;
+	margin: 0 0 0 2px;
+}
+* html #mainnav li a:hover {
+	background: #493119;
+	color:#d0934d;
+	}
+
+* html #mainnav li a:hover {
+	background: #493119;
+	color:#d0934d;
+	}
+* html #mainnav li.current a:link {
+	background: #493119;
+	color:#d0934d;
+	}
+* html #mainnav li.current a:visited {
+	background: #493119;
+	color:#d0934d;
+	}
+	
+/* ========		content		============================================================== */
+#content {
+	float:left;
+	background: transparent url(../images/slideshow-bg.png) repeat-x top left;
+	width:860px;
+	min-height:477px;
+	padding:10px;
+	margin:0 0 20px 50px;
+	}
+* html #content {
+	float:left;
+	background:#493119 url(../images/slideshow-bg.gif) repeat-x top left;
+	width:860px;
+	overflow:auto;
+	padding:10px 10px 2px 10px !important;
+	margin:0 0 20px 25px;
+	}
+/* rotator in-page placement */
+    div#rotator {
+	position:relative;
+	height:345px;
+}
+/* rotator css */
+	div#rotator ul li {
+	z-index:3;
+	float:left;
+	list-style: none;
+	position:absolute;
+}
+/* rotator image style */	
+    div#rotator ul li.show {
+	z-index:2;
+}
+* html div#rotator {
+	margin:0 0 43px 0;
+	}
+        
+/* ========		featured		============================================================== */        
+#featured {
+	float:left;
+	width:870px;
+	min-height:209px;
+	overflow:auto;
+	margin:0 0 20px 50px;
+	padding:10px 0 0 10px;
+}
+* html #featured {
+	float:left;
+	background:#0c0501;
+	width:870px;
+	height:209px;
+	overflow:auto;
+	margin:0 0 20px 25px;
+	padding:10px 0 0 10px;
+}
+#featured #items {
+	float:left;
+	width:744px;
+	font-size:90%;
+}
+#featured .item {
+	float:left;
+	width:370px;
+	min-height:100px;
+}
+
+#featured h1 {	margin-bottom: 200px;
+	text-align:center;
+	color:#ac7940;
+        height:209px;
+        width:870px;
+        margin:0 0 20px 25px;
+	padding:200px 0 0 10px;
+}
+#featured a, #featured a:link {
+	color:#ac7940;
+	text-decoration:none;
+}
+#featured a:hover {
+	color:#613e23;
+}
+#featured .item img {
+	float:right;
+	padding-right:14px;
+	border-right:1px solid #362411;
+	margin-right:14px;
+}
+
+#featured .item h3 {
+	font-size:120%;
+	color:#f6e8d2;
+	margin:0 0 10px 0;
+	text-transform:uppercase;
+}
+#featured .item h3 a {
+	color:#f6e8d2;
+}
+#featured .item p strong {
+	color:#f6e8d2;
+	font-style:italic;
+	font-size:110%;
+}
+#featured .item p {
+	color:#ac7940;
+}
+#featured .item p a:hover strong{
+	color:#ac7940;
+}
+#featured .item p a:hover {
+	color:#4d2f1b;
+}
+
+#featured #wedding img {
+	float:right;
+	border:1px solid #362411;
+	margin:0 10px 0 0 ;
+}
+
+/* ========		footer		============================================================== */
+#footer {
+	float:left;
+	width:880px;
+	padding:0 0 0 50px;
+	color:#613e23;
+	font-size:50%;
+	text-align:center;
+}
+#footer h4 {
+	width:880px;	
+	text-align:center;
+	color:#ac7940;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	font-weight:lighter;
+	font-size:170%
+}
+#footer a, #footer a:link {
+	color:#613e23;
+	text-decoration:none;
+}
+#footer a:hover {
+	color:#ac7940;
+}
+#footer h4 a, #footer h4 a:link {
+	color:#ac7940;
+}
+#footer h4 a:hover {
+	color:#613e23;
+}
+#footer img {
+	margin:18px 0 4px;	
+}
+/* ========		sign-up		============================================================== */
+
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #2196F3;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #1565C0;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #2196F3;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
